@@ -1,0 +1,7 @@
+<h1>All Classrooms</h1>
+<ul>
+<% @classrooms.each do |classroom| %>
+<li><%= link_to classroom.course_name, classroom_path(classroom) %>
+<%= classroom.semester %></li>
+<% end %>
+</ul>
